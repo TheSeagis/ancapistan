@@ -1,0 +1,185 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 255, 255, 255;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+}
+
+/* Custom styles for sidebar navigation */
+.sidebar-sticky {
+  position: sticky;
+  top: 6rem;
+}
+
+/* Custom styles for blockquotes */
+blockquote {
+  border-left: 4px solid #eab308;
+  padding-left: 1rem;
+  font-style: italic;
+  margin: 1.5rem 0;
+  color: #4b5563;
+}
+
+/* Custom styles for links within content */
+.content a {
+  color: #ca8a04;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.content a:hover {
+  color: #854d0e;
+  text-decoration: underline;
+}
+
+/* Custom styles for headings */
+h1, h2, h3, h4, h5, h6 {
+  scroll-margin-top: 5rem;
+}
+
+/* Custom animation for page transitions */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.page-transition {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Custom styles for code blocks */
+pre {
+  background-color: #f3f4f6;
+  border-radius: 0.375rem;
+  padding: 1rem;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+}
+
+code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.875rem;
+}
+
+/* Custom styles for tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+}
+
+th {
+  background-color: #f3f4f6;
+  font-weight: 600;
+  text-align: left;
+  padding: 0.75rem;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+tr:hover {
+  background-color: #f9fafb;
+}
+
+/* Custom styles for buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  border-radius: 0.375rem;
+  transition: all 0.2s;
+}
+
+.btn-primary {
+  background-color: #eab308;
+  color: #000000;
+}
+
+.btn-primary:hover {
+  background-color: #ca8a04;
+}
+
+.btn-secondary {
+  border: 1px solid #eab308;
+  color: #eab308;
+  background-color: transparent;
+}
+
+.btn-secondary:hover {
+  background-color: rgba(234, 179, 8, 0.1);
+}
+
+/* Custom styles for mobile navigation */
+@media (max-width: 768px) {
+  .mobile-nav {
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+}
+
+/* Custom styles for images */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.375rem;
+}
+
+/* Custom styles for definition lists */
+dt {
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+dd {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Custom styles for horizontal rules */
+hr {
+  border: 0;
+  height: 1px;
+  background-color: #e5e7eb;
+  margin: 2rem 0;
+}
+
+/* Custom styles for footnotes */
+.footnote {
+  font-size: 0.875rem;
+  color: #6b7280;
+  vertical-align: super;
+  font-weight: 500;
+}
+
+.footnotes {
+  border-top: 1px solid #e5e7eb;
+  margin-top: 2rem;
+  padding-top: 1rem;
+}
+
+.footnotes ol {
+  padding-left: 1.5rem;
+}
+
+.footnotes li {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+}
