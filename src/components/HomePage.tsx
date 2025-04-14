@@ -1,42 +1,55 @@
-import Link from 'next/link';
-
-export default function Navbar() {
+export default function HomePage() {
   return (
-    <nav className="bg-white shadow-md">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between h-16">
-          <div className="flex">
-            <div className="flex-shrink-0 flex items-center">
-              <Link href="/" className="text-2xl font-bold text-gray-900">
-                Ancapistan<span className="text-yellow-500">.org</span>
-              </Link>
-            </div>
-            <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
-              <Link href="/principles" className="border-transparent text-gray-900 hover:text-yellow-500 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
-                Principles
-              </Link>
-              <Link href="/key-figures" className="border-transparent text-gray-900 hover:text-yellow-500 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
-                Key Figures
-              </Link>
-              <Link href="/theory/economic-foundations" className="border-transparent text-gray-900 hover:text-yellow-500 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
-                Economic Theory
-              </Link>
-              <Link href="/history" className="border-transparent text-gray-900 hover:text-yellow-500 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
-                History
-              </Link>
-              <Link href="/applications" className="border-transparent text-gray-900 hover:text-yellow-500 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
-                Applications
-              </Link>
-              <Link href="/criticisms" className="border-transparent text-gray-900 hover:text-yellow-500 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
-                Criticisms
-              </Link>
-              <Link href="/resources" className="border-transparent text-gray-900 hover:text-yellow-500 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
-                Resources
-              </Link>
-            </div>
+    <div className="min-h-screen bg-ancap-black text-white">
+      <div className="max-w-6xl mx-auto p-6">
+        <h1 className="text-4xl font-bold text-ancap-gold mb-4">Anarcho-Capitalism: Liberty, Property, and Voluntary Exchange</h1>
+        
+        <p className="mb-8 text-lg">
+          Explore the philosophy that envisions a society based on voluntary relationships and free markets without state intervention.
+        </p>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+          <a href="/principles" className="block p-6 bg-gray-900 border-l-4 border-ancap-gold rounded-lg hover:bg-gray-800 transition">
+            <h2 className="text-2xl font-bold text-ancap-gold mb-2">Core Principles</h2>
+            <p>Discover the foundational ideas that define anarcho-capitalist thought.</p>
+          </a>
+          
+          <a href="/resources" className="block p-6 bg-gray-900 border-l-4 border-ancap-gold rounded-lg hover:bg-gray-800 transition">
+            <h2 className="text-2xl font-bold text-ancap-gold mb-2">Explore Resources</h2>
+            <p>Find books, articles, and other materials to deepen your understanding.</p>
+          </a>
+        </div>
+        
+        <h2 className="text-3xl font-bold text-ancap-gold mb-4">What is Anarcho-Capitalism?</h2>
+        
+        <p className="mb-4">
+          Anarcho-capitalism is a political philosophy that advocates for the elimination of the state in favor of individual sovereignty, private property, and free markets. It combines anarchism's rejection of the state with capitalism's emphasis on private property and voluntary exchange.
+        </p>
+        
+        <p className="mb-4">
+          Unlike other forms of anarchism that oppose capitalism, anarcho-capitalism sees free markets as the foundation of a free society. It envisions a world where all goods and services—including law, security, and infrastructure—are provided through voluntary market transactions rather than government coercion.
+        </p>
+        
+        <p className="mb-8">
+          This comprehensive resource explores the principles, history, key figures, economic theories, practical applications, and criticisms of anarcho-capitalism, providing a balanced and in-depth understanding of this influential philosophy.
+        </p>
+        
+        <h2 className="text-3xl font-bold text-ancap-gold mb-4">Core Tenets of Anarcho-Capitalism</h2>
+        
+        <div className="ml-6 mb-8">
+          <div className="mb-6">
+            <h3 className="text-2xl font-bold text-white mb-2">1. Self-Ownership</h3>
+            <p>Each individual has exclusive control over their own body and life.</p>
           </div>
+          
+          <div className="mb-6">
+            <h3 className="text-2xl font-bold text-white mb-2">2. Non-Aggression Principle</h3>
+            <p>Initiation of physical force against persons or property, threat of such, or fraud upon persons or their property is inherently illegitimate.</p>
+          </div>
+          
+          {/* Add more tenets as needed */}
         </div>
       </div>
-    </nav>
+    </div>
   );
 }
