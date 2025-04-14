@@ -7,7 +7,7 @@ import Footer from './components/Footer';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Ancapistan.com - Comprehensive Anarcho-Capitalism Resource',
+  title: 'Ancapistan.org - Your Comprehensive Anarcho-Capitalism Resource',
   description: 'A comprehensive resource for understanding Anarcho-Capitalism: principles, theory, history, key figures, applications, and criticisms.',
 };
 
