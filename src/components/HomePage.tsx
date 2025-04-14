@@ -1,48 +1,42 @@
-// src/components/HomePage.tsx
-import Image from 'next/image';
+import Link from 'next/link';
 
-export default function HomePage() {
+export default function Navbar() {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-900 to-gray-800 text-white">
-      {/* Hero Section */}
-      <div className="relative h-96 w-full">
-        <Image 
-          src="/hero-image.jpg" 
-          alt="Anarcho-Capitalism" 
-          fill 
-          style={{objectFit: 'cover'}}
-          priority
-        />
-        <div className="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center">
-          <div className="text-center p-4">
-            <h1 className="text-5xl font-bold text-yellow-400 mb-4">Ancapistan</h1>
-            <p className="text-xl max-w-2xl mx-auto">Exploring the principles, history, and applications of Anarcho-Capitalism</p>
-          </div>
-        </div>
-      </div>
-
-      {/* Content Sections */}
-      <div className="max-w-6xl mx-auto p-6">
-        <div className="grid md:grid-cols-2 gap-8 my-12">
-          <div className="bg-gray-800 p-6 rounded-lg shadow-lg border-l-4 border-yellow-400">
-            <h2 className="text-2xl font-bold text-yellow-400 mb-4">Core Principles</h2>
-            <p className="mb-4">Anarcho-capitalism is a political philosophy that advocates for the elimination of the state in favor of individual sovereignty, private property, and free markets.</p>
-            <div className="mt-4 text-right">
-              <a href="/principles" className="text-yellow-400 hover:underline">Learn more →</a>
+    <nav className="bg-white shadow-md">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex justify-between h-16">
+          <div className="flex">
+            <div className="flex-shrink-0 flex items-center">
+              <Link href="/" className="text-2xl font-bold text-gray-900">
+                Ancapistan<span className="text-yellow-500">.org</span>
+              </Link>
+            </div>
+            <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
+              <Link href="/principles" className="border-transparent text-gray-900 hover:text-yellow-500 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                Principles
+              </Link>
+              <Link href="/key-figures" className="border-transparent text-gray-900 hover:text-yellow-500 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                Key Figures
+              </Link>
+              <Link href="/theory/economic-foundations" className="border-transparent text-gray-900 hover:text-yellow-500 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                Economic Theory
+              </Link>
+              <Link href="/history" className="border-transparent text-gray-900 hover:text-yellow-500 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                History
+              </Link>
+              <Link href="/applications" className="border-transparent text-gray-900 hover:text-yellow-500 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                Applications
+              </Link>
+              <Link href="/criticisms" className="border-transparent text-gray-900 hover:text-yellow-500 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                Criticisms
+              </Link>
+              <Link href="/resources" className="border-transparent text-gray-900 hover:text-yellow-500 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+                Resources
+              </Link>
             </div>
           </div>
-          <div className="relative h-64 rounded-lg overflow-hidden">
-            <Image 
-              src="/principles-image.jpg" 
-              alt="Anarcho-Capitalist Principles" 
-              fill 
-              style={{objectFit: 'cover'}}
-            />
-          </div>
         </div>
-
-        {/* Additional sections would follow the same pattern */}
       </div>
-    </div>
+    </nav>
   );
 }
