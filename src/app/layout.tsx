@@ -19,25 +19,25 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <style jsx global>{`
+        <style dangerouslySetInnerHTML={{ __html: `
           body {
-            background-color: #1A1A1A;
-            color: white;
+            background-color: #1A1A1A !important;
+            color: white !important;
           }
           h1, h2, h3, h4, h5, h6 {
-            color: #FFD700;
+            color: #FFD700 !important;
           }
           a {
-            color: #FFD700;
+            color: #FFD700 !important;
           }
           a:hover {
-            text-decoration: underline;
+            text-decoration: underline !important;
           }
           .navbar {
-            background-color: #1A1A1A;
-            border-bottom: 1px solid #FFD700;
+            background-color: #1A1A1A !important;
+            border-bottom: 1px solid #FFD700 !important;
           }
-        `}</style>
+        `}} />
       </head>
       <body className={inter.className}>
         <Navbar />
