@@ -18,6 +18,27 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <style jsx global>{`
+          body {
+            background-color: #1A1A1A;
+            color: white;
+          }
+          h1, h2, h3, h4, h5, h6 {
+            color: #FFD700;
+          }
+          a {
+            color: #FFD700;
+          }
+          a:hover {
+            text-decoration: underline;
+          }
+          .navbar {
+            background-color: #1A1A1A;
+            border-bottom: 1px solid #FFD700;
+          }
+        `}</style>
+      </head>
       <body className={inter.className}>
         <Navbar />
         {children}
