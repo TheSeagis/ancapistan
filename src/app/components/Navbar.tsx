@@ -7,30 +7,30 @@ export default function Navbar() {
         <div className="flex justify-between h-16">
           <div className="flex">
             <div className="flex-shrink-0 flex items-center">
-              <Link href="/" className="text-2xl font-bold bg-gradient-to-r from-ancap-black to-ancap-gold bg-clip-text text-transparent">
-                Ancapistan<span className="text-ancap-gold">.org</span>
+              <Link href="/" className="text-2xl font-bold text-gray-900">
+                Ancapistan<span className="text-yellow-500">.org</span>
               </Link>
             </div>
             <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
-              <Link href="/principles" className="border-transparent text-gray-900 hover:text-ancap-gold inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+              <Link href="/principles" className="border-transparent text-gray-900 hover:text-yellow-500 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
                 Principles
               </Link>
-              <Link href="/key-figures" className="border-transparent text-gray-900 hover:text-ancap-gold inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+              <Link href="/key-figures" className="border-transparent text-gray-900 hover:text-yellow-500 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
                 Key Figures
               </Link>
-              <Link href="/theory/economic-foundations" className="border-transparent text-gray-900 hover:text-ancap-gold inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+              <Link href="/theory/economic-foundations" className="border-transparent text-gray-900 hover:text-yellow-500 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
                 Economic Theory
               </Link>
-              <Link href="/history" className="border-transparent text-gray-900 hover:text-ancap-gold inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+              <Link href="/history" className="border-transparent text-gray-900 hover:text-yellow-500 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
                 History
               </Link>
-              <Link href="/applications" className="border-transparent text-gray-900 hover:text-ancap-gold inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+              <Link href="/applications" className="border-transparent text-gray-900 hover:text-yellow-500 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
                 Applications
               </Link>
-              <Link href="/criticisms" className="border-transparent text-gray-900 hover:text-ancap-gold inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+              <Link href="/criticisms" className="border-transparent text-gray-900 hover:text-yellow-500 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
                 Criticisms
               </Link>
-              <Link href="/resources" className="border-transparent text-gray-900 hover:text-ancap-gold inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
+              <Link href="/resources" className="border-transparent text-gray-900 hover:text-yellow-500 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium">
                 Resources
               </Link>
             </div>
